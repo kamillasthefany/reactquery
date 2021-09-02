@@ -2,8 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import { useQuery } from 'react-query';
 import axios from 'axios';
+// import {
+//   useListarPersonagens,
+//   usePesquisarPersonagem
+// } from "./queries/got/index";
 
 function App() {
+
+  //const GoT = useListarPersonagens();
 
   const { isLoading, data } = useQuery('teste', () =>
     axios("https://thesimpsonsquoteapi.glitch.me/quotes")

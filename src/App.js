@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import { useQuery } from 'react-query';
+import axios from 'axios';
 
 function App() {
+
+  const { isLoading, data } = useQuery('teste', () =>
+    axios("https://thesimpsonsquoteapi.glitch.me/quotes")
+  );
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isLoading && (<p>carregando</p>)}
+      {
+        data && (
+          <div>
+            <p>{data.data[0].quote}</p>
+            <img src={data.data[0].image} alt="imagem do personagem" />
+          </div>
+        )
+      }
     </div>
   );
 }

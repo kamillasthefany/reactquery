@@ -6,9 +6,15 @@ import { TransparentCard } from '../../components/TransparentCard/index';
 export const Home = () => {
   return (
     <MainContainer id='teste'>
-      <p>teste</p>
-
-      <TransparentCard />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </MainContainer>
   );
 };

@@ -12,4 +12,8 @@ export const MainContainer = styled.div`
   width:100vw;
   background-size:contain;
   overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 `;

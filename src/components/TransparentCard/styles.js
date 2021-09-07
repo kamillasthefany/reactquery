@@ -9,11 +9,6 @@ export const Container = styled.div`
   flex-wrap: wrap;
   margin: 40px 0;
 
-  /* &:hover{
-    opacity: 1;
-     transform: translateY(-20px);
-  } */
-  }
 `;
 
 export const Card = styled.div`

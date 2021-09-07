@@ -43,8 +43,8 @@ export const Content = styled.div`
 
 export const ImgBx = styled.div` 
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
   border: 10px solid rgba(0, 0, 0, 0.25);

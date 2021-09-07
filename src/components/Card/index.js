@@ -1,16 +1,18 @@
 import React from 'react';
 import { Container, ContextBox, Content, ImgBx, H3, Span, Imagem, CardBox, Sci } from './styles';
 
-export const Card = () => {
+export const Card = ({ title, subtitle, image }) => {
   return (
     <Container>
       <CardBox>
         <Content>
           <ImgBx>
-            <Imagem src="https://avatars.githubusercontent.com/u/36460097?v=4" alt="imagem" />
+            {/* <Imagem src="https://avatars.githubusercontent.com/u/36460097?v=4" alt="imagem" /> */}
+            <Imagem src={image} alt="imagem" />
           </ImgBx>
           <div class="contentBx">
-            <H3>Someonaaaaaaaaae Famous<br /><Span>Creative</Span></H3>
+            {/* <H3>Someonaaaaaaaaae Famous<br /><Span>Creative</Span></H3> */}
+            <H3>{title}<br /><Span>{subtitle}</Span></H3>
           </div>
         </Content>
         {/* <Sci>
